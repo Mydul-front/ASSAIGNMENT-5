@@ -23,12 +23,13 @@ for (let i = 0; i < buttons.length; i++) {
     document.getElementById("quantity2").innerText = sub;
 
     // activity log button
+    const title = event.target.closest(".p-4").querySelector("h2").innerText;
     const now = new Date();
     const time = now.toLocaleString();
     const container = document.getElementById("activity-container");
     const p = document.createElement("p");
     p.innerText = `
-    You have Completed the task ${title.innerText} at ${time}
+    You have Completed the task ${title} at ${time}
 
     `;
     container.appendChild(p);
