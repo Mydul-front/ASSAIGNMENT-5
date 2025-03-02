@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Other Documents</title>
+    <!-- tailwind cdn -->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <!-- daisy UI cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- google font cdn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .poppins-font {
+        font-family: "Poppins", sans-serif;
+        font-style: normal;
+      }
+      .discover {
+        background-image: linear-gradient(to right, #3752fd, #9ba8f8);
+      }
+    </style>
+  </head>
+  <body class="poppins-font bg-[#F4F7FF] h-screen py-7">
+    <header>
+      <div
+        class="flex items-center justify-between bg-white py-2 px-4 rounded-2xl"
+      >
+        <div class="flex items-center gap-3">
+          <img src="assets/logo.png" alt="" />
+          <h1 class="text-2xl">Dev<span class="font-bold">Board</span></h1>
+        </div>
+        <div>
+          <button id="back" class="btn bg-blue-700 text-white text-xl">
+            Back to Desk
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <h1 class="text-3xl font-bold text-center my-5">Blogs</h1>
+    </main>
+
+    <footer>
+      <div>
+        <!-- qus. 1 -->
+        <div class="my-3 bg-white rounded-2xl p-3 m-2">
+          <h1 class="text-2xl text-black">
+            Question-1: What are the different ways to select an element in the
+            DOM?
+          </h1>
+          <hr>
+          <p>
+            document.getElementById("id") – Selects an element by ID.
+            document.getElementsByClassName("class") – Selects elements by class
+            (returns a collection). document.getElementsByTagName("tag") –
+            Selects elements by tag name (returns a collection).
+            document.querySelector("selector") – Selects the first matching
+            element (supports CSS selectors).
+            document.querySelectorAll("selector") – Selects all matching
+            elements (returns a NodeList).
+          </p>
+        </div>
+
+        <!-- qus. 2 -->
+        <div class="my-3 bg-white rounded-2xl p-3 m-2">
+          <h1 class="text-2xl text-black">
+            Question-2: What is the difference between innerHTML, innerText, and
+            textContent ?
+          </h1>
+          <hr>
+          <p>
+            innerHTML – Gets or sets the HTML content inside an element
+            (including tags). innerText – Gets or sets the visible text inside
+            an element (ignores hidden elements and formats text as displayed).
+            textContent – Gets or sets all text inside an element (including
+            hidden text, without formatting).
+          </p>
+        </div>
+
+        <!-- qus. 3 -->
+        <div class="my-3 bg-white rounded-2xl p-3 m-2">
+          <h1 class="text-2xl text-black">
+            Question-3: What is event delegation in the DOM?
+          </h1>
+          <hr>
+          <p>
+            Event delegation is a technique where a parent element handles
+            events for its child elements using event bubbling. Instead of
+            adding event listeners to multiple child elements, you attach a
+            single listener to a common ancestor and use event.target to
+            identify the clicked child.
+          </p>
+        </div>
+
+        <!-- qus. 4 -->
+        <div class="my-3 bg-white rounded-2xl p-3 m-2">
+          <h1 class="text-2xl text-black">
+            Question-4: What is event bubbling in the DOM?
+          </h1>
+          <hr>
+          <p>
+            Event bubbling is the process where an event starts from the target
+            element and moves upward through its ancestors in the DOM. <br />
+            Example:If you click a button inside a div, the event first triggers
+            on the button and then bubbles up to the div, then body, and so on.
+          </p>
+        </div>
+
+        <div class="my-3 bg-white rounded-2xl p-3 m-2">
+          <h1 class="text-2xl my-2 text-black">
+            Question-5: How do you create, add, and remove elements using JavaScript?
+          </h1>
+          <hr>
+          <p>
+            document.createElement() ,document.body.appendChild() ,document.getElementById() ,document.remove() ,document.body.removeChild().
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="index2.js"></script>
+  </body>
+</html>
