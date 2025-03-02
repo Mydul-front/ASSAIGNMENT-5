@@ -16,6 +16,9 @@ for (let i = 0; i < buttons.length; i++) {
     document.getElementById("quantity").innerText = sum;
     const quantity2 = parseInt(document.getElementById("quantity2").innerText);
     const sub = quantity2 - 1;
+    if (sub == 0) {
+      alert("completed");
+    }
     //     console.log(sub);
     document.getElementById("quantity2").innerText = sub;
 
